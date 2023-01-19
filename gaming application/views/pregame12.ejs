@@ -1,0 +1,12 @@
+<%- include("partials/header") %>
+        <h2>Game Title: <%= title %></h2> <!-- Anything between the EJs signs are javascript code -->
+        <% if(title == "Fortnite"){%>
+            <p>it will give the correct result if the value we enter for the title in url will match the if condition</p>
+
+        <% } else{ %>
+        <p>the title u entered is not matching with the if condition</p>
+        <% } %>
+        <h3>Game Creator: <%= creator %></h3>
+
+        
+        <%- include("partials/footer") %>

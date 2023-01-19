@@ -1,0 +1,58 @@
+<%- include ("partials/header") %>
+
+<h1>Add a Game Here</h1>
+<form action="/addgame" method="POST" enctype="multipart/form-data">
+    <div class="mb-3">
+      <label>Name</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" name="title" >
+      
+    </div>
+    <div class="mb-3">
+      <label>Creator</label>
+      <input type="text" class="form-control" id="exampleInputPassword1" name="creator">
+    </div>
+    <div class="mb-3">
+        <label>Size</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" name="width">
+        <input type="text" class="form-control" id="exampleInputPassword1" name="height">
+      </div>
+      <!-- <div class="mb-3">
+        <label>File Name</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" name="fileName">
+      </div>
+      <div class="mb-3">
+        <label>Thumbnail</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" name="thumbnailFile">
+      </div> -->
+    <h3>Upload Ypur Files</h3>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+      </div>
+      <div class="custom-file">  
+          <input type="file" class="custom-file-input" id="gameInput" aria-describedby="inputGroupFileAddon01" name="gameFile">
+          <label class="custom-file-label" for="gameInput">Game File</label>
+
+      </div>
+
+    </div>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+      </div>
+      <div class="custom-file">  
+          <input type="file" class="custom-file-input" id="gameInput" aria-describedby="inputGroupFileAddon01" name="imageFile">
+          <label class="custom-file-label" for="gameInput">Image File</label>
+
+      </div>
+
+    </div>
+   
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+
+
+
+<%- include ("partials/header") %>
